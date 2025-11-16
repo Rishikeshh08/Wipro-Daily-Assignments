@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Person {
+    // TODO: Define the 'Person' class with 'name' and 'age' member variables
+    private String name;
+    private int age;
+    Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    private void display(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+    public static void main(String[] args) {
+        // TODO: Write your code here
+        Scanner sc = new Scanner(System.in);
+        String n = sc.nextLine();
+        int a = sc.nextInt();
+        Person p = new Person(n, a);
+        p.display();
+    }
+}

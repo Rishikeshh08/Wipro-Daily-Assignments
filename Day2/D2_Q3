@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args){
+        // Scanner sc = new Scanner(System.in);
+        // String str = sc.nextLine();
+        solution("Great Learning");
+    }
+    public static void solution(String str){
+        int n = str.length();
+        int j = -1;
+        while(j <= n-1){
+            int i = j+1;
+            j = i;
+            while(j <= n-1 && str.charAt(j) != ' '){
+                j++;
+            }
+            int len = j-i;
+            i = j-1;
+            while(len != 0){
+                System.out.print(str.charAt(i));
+                i--;
+                len--;
+            }
+            System.out.print(" ");
+        }
+    }
+}

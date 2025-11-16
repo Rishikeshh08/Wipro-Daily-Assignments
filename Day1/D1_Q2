@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class LogicalOperatorsExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean input1 = scanner.nextBoolean();
+        boolean input2 = scanner.nextBoolean();
+        
+        boolean res = input1 && input2;
+        boolean res2 = input1 || input2;
+
+        System.out.println(res);
+        System.out.println(res2);
+
+        // TODO: Write your code here
+    }
+}
